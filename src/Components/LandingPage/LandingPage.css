@@ -1,0 +1,208 @@
+.LandingPage{
+    min-height: 110vh;
+    width: 100%;
+    background: linear-gradient(rgb(99, 167, 249), rgb(3, 27, 62));
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main-container{
+    min-width: 94vw;
+    min-height: 90vh;
+    background-color: #FFFFFF;
+    position: relative;
+    border-top-left-radius: 3rem;
+}
+
+.mainContainer-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.bottomline{
+    width: 44.8rem;
+    height: 4.5rem;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.num1{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 1.3rem;
+    bottom: 1.3rem;
+}
+
+.num2{
+    width: 36rem;
+    height: 4.5rem;
+    background-color: #FFFFFF;
+}
+
+.num3{
+    width: 6.9rem;
+    height: 6.9rem;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1.1rem;
+    border-radius: 10px;
+}
+
+.main-container-addon{
+    border-top-right-radius: 10px;
+    min-width: 3vw;
+    height: 16rem;
+    background-color: transparent;
+    position: relative;
+    top: -15rem;
+}
+
+.addon1{
+    border-top-right-radius: 10px;
+    width: 3rem;
+    height: 12rem;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-right: 7px;
+}
+
+.addon2{
+    width: 6rem;
+    height: 6rem;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 1.6rem;
+    bottom: 5px;
+}
+
+.main-top-left{
+    position: absolute;
+    top: -3.4rem;
+    left: -5rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    background: linear-gradient(rgb(99, 167, 249),rgb(99, 167, 249));
+    transform: rotate(45deg);
+    border-top: none;
+}
+
+.content-container{
+    position: absolute;
+    width: 95%;
+    height: 80%;
+
+}
+
+.content-left{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-left img{
+    width: 55rem;
+    height: 44rem;
+    position: absolute;
+    bottom: -5.3rem;
+    left: -5rem;
+}
+
+.content-container{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Media Queries */
+@media (max-width:1500px){
+    .addon1::before{
+        content: "1400";
+    }
+    .addon1{
+        margin-top: 18px;
+        margin-right: 11px;
+    }
+    .addon2{
+        right: 30px;
+        bottom:-1px;
+    }
+
+}
+@media (max-width:1200px){
+    .addon1::before{
+        content: "1200";
+    }
+    .addon1{
+        margin-top: 17px;
+        margin-right: 5px;
+
+    }
+    .addon2{
+        bottom: -1px;
+    }
+}
+@media (max-width:992px) {
+    .content-left img{
+        width: 35rem;
+        height: 30rem;
+        margin-bottom: 100px;
+    }
+    .addon1{
+        margin-top: 18px;
+        margin-right: 5px;
+        background-color: #FFFFFF;
+
+    }
+    .addon2{
+        bottom: 1px;
+        right: 5px;
+    }
+}
+
+@media (max-width:768px) {
+    .content-container{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .mainContainer-parent{
+        display: none;
+    }
+
+    .main-container-addon{
+        display: none;
+    }
+
+    .content-left{
+        display: none;
+    }
+
+    .LandingPage{
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+    }
+}
+  
