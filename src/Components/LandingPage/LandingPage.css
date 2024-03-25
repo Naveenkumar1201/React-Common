@@ -1,5 +1,5 @@
 .LandingPage{
-    min-height: 110vh;
+    min-height: 120vh;
     width: 100%;
     background: linear-gradient(rgb(99, 167, 249), rgb(3, 27, 62));
     display: flex;
@@ -61,21 +61,22 @@
     border-top-right-radius: 10px;
     width: 50px;
     height: 250px;
-    /* background-color: #f0f8ff; */
+    /* background-color: #26282a; */
     position: relative;
     margin-top: -488px;
+    padding: 0;
     
 }
 
 .addon1{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 3rem;
-    height: 12rem;
+    width: 48px;
+    height: 190px;
     background-color: #fff;
-    top:10px;
-    right: 4px;
     position: absolute;
+    top: 10px;
+    
 }
 /* .addon1::before{
     content: "full";
@@ -144,6 +145,11 @@
 
 
 /* Media Queries */
+@media(max-width:1600px){
+    .addon1{
+        top: 18px;
+    }
+}
 @media (max-width:1500px){
     
     /* .addon1::before{
@@ -173,6 +179,15 @@
     }
 
 }
+@media(max-width:1300px){
+    /* .addon1::before{
+        content: "1300";
+    } */
+    .addon1{
+        top: 18px;
+    }
+
+}
 @media (max-width:1200px){
     /* .addon1::before{
         content: "1200";
@@ -182,19 +197,33 @@
        top: 18px;
     }
     .addon2{
-        top: 150px;
-        left: -88px;
+        top: 158px;
+        left: -82px;
     }
 }
+@media (max-width:1100px){
+    /* .addon1::before{
+        content: "1100";
+    } */
+    .addon1{
+        top: 18px;
+        left: -15px;
+    }
+    .addon2{
+        left:-83px ;
+}
+}
 @media (max-width:992px) {
+    /* .addon1::before{
+        content: "992";
+    } */
     .content-left img{
         width: 35rem;
         height: 30rem;
         margin-bottom: 100px;
     }
     .addon1{
-        margin-top: 18px;
-        margin-right: 5px;
+        top: 18px;
         background-color: #FFFFFF;
 
     }
