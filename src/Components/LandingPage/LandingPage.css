@@ -136,10 +136,20 @@
 
 
 /* Media Queries */
-@media (max-width:1500px){
-    .addon1::before{
-        content: "1400";
+/* @media (min-width:1400px){
+    .addon1{
+        margin-top: 18px;
+        margin-right: 11px;
     }
+    .addon2{
+        right: 30px;
+        bottom:-1px;
+    }
+} */
+@media (max-width:1600px){
+    /* .addon1::before{
+        content: "1400";
+    } */
     .addon1{
         margin-top: 18px;
         margin-right: 11px;
@@ -151,13 +161,14 @@
 
 }
 @media (max-width:1200px){
-    .addon1::before{
+    /* .addon1::before{
         content: "1200";
-    }
+        background-color: aqua;
+    } */
     .addon1{
         margin-top: 17px;
-        margin-right: 5px;
-
+        margin-left: -13px;
+        /* background-color: antiquewhite; */
     }
     .addon2{
         bottom: -1px;
@@ -198,6 +209,7 @@
     .content-left{
         display: none;
     }
+  
 
     .LandingPage{
         justify-content: center;

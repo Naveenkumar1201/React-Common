@@ -2,6 +2,7 @@ import React from 'react'
 import './LandingPage.css'
 import LoginForm from '../LoginForm/LoginForm'
 
+
 const LandingPage = () => {
   return (
     <div className='LandingPage'>
