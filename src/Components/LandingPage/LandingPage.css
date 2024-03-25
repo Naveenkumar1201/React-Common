@@ -59,30 +59,38 @@
 
 .main-container-addon{
     border-top-right-radius: 10px;
-    min-width: 3vw;
-    height: 16rem;
-    background-color: transparent;
+    width: 50px;
+    height: 250px;
+    /* background-color: #f0f8ff; */
     position: relative;
-    top: -15rem;
+    margin-top: -488px;
+    
 }
 
 .addon1{
     border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 3rem;
     height: 12rem;
     background-color: #fff;
-    margin-top: 9px;
-    margin-right: 7px;
+    top:10px;
+    right: 4px;
+    position: absolute;
 }
+/* .addon1::before{
+    content: "full";
+} */
 
 .addon2{
     width: 6rem;
     height: 6rem;
-    background-color: #FFFFFF;
+    background-color: #fff;
     transform: rotate(45deg);
     position: absolute;
-    right: 1.6rem;
-    bottom: 5px;
+    top: 150px;
+    left: -67px;
+    border-radius: 10px;
+        
 }
 
 .main-top-left{
@@ -136,27 +144,32 @@
 
 
 /* Media Queries */
-/* @media (min-width:1400px){
+@media (max-width:1500px){
+    
+    /* .addon1::before{
+        content: "1500";
+    } */
     .addon1{
-        margin-top: 18px;
-        margin-right: 11px;
+      top: 18px;
+      right: 21px;
     }
     .addon2{
-        right: 30px;
-        bottom:-1px;
+        left: -82px;
+        top:150px;
     }
-} */
-@media (max-width:1600px){
+}
+@media (max-width:1400px){
     /* .addon1::before{
         content: "1400";
     } */
     .addon1{
-        margin-top: 18px;
-        margin-right: 11px;
+       top: 18px;
+       
     }
     .addon2{
-        right: 30px;
-        bottom:-1px;
+       background-color:#fff;
+       top: 150px;
+       
     }
 
 }
@@ -166,12 +179,11 @@
         background-color: aqua;
     } */
     .addon1{
-        margin-top: 17px;
-        margin-left: -13px;
-        /* background-color: antiquewhite; */
+       top: 18px;
     }
     .addon2{
-        bottom: -1px;
+        top: 150px;
+        left: -88px;
     }
 }
 @media (max-width:992px) {
